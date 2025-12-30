@@ -69,6 +69,26 @@ npm start
 | DELETE | /api/tasks/:id   | Delete task         | ✔              |
 
 
+## 🧪 API Documentation & Postman
+
+The backend APIs are documented below and can be tested using the included Postman collection.
+
+### Exported Postman Collection
+Download: **Frontend_Assignment API.postman_collection.json**
+
+### API Endpoints
+
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| POST | /api/auth/signup | Register user | ❌ |
+| POST | /api/auth/login | Login (returns JWT) | ❌ |
+| GET | /api/tasks | Get all tasks | ✔ Bearer Token |
+| POST | /api/tasks | Create a new task | ✔ Bearer Token |
+| DELETE | /api/tasks/:id | Delete a task | ✔ Bearer Token |
+
+**Use Authorization Header:**  
+
+
 ## 📈 Scalability Notes – How This Project Can Scale in Production
 
 This application is currently built as an MVP. Below are recommended steps to scale both the backend and frontend once the system grows and traffic increases.
@@ -108,5 +128,6 @@ This application is currently built as an MVP. Below are recommended steps to sc
 - Use message queue systems (Kafka / RabbitMQ) for async workloads
 
 ---
+
 
 
